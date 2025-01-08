@@ -42,7 +42,7 @@ var mvCameraAngularVelocity: Vector3 = Vector3(0.0, 0.0, 0.0);
 
 func _ready() -> void:
 	mCamera = get_viewport().get_camera_3d();
-	if (is_instance_valid(mCamera)==false):
+	if (is_instance_valid(mCamera)==false || mCamera.is_inside_tree() == false):
 		printerr("[EffectsHandler] No active camera found.");
 		return;
 	
@@ -76,7 +76,7 @@ func _ready() -> void:
 #-------------------------------------------------------
 
 func _process(afDeltaTime : float)->void:	
-	if (is_instance_valid(mCamera) == false): return;
+	if (is_instance_valid(mCamera) == false || mCamera.is_inside_tree() == false): return;
 
 	####################################################################################################
 	# Fov Fade
@@ -276,7 +276,7 @@ func _process(afDeltaTime : float)->void:
 #-------------------------------------------------------
 
 func _physics_process(afTimeStep: float) -> void:
-	if (is_instance_valid(mCamera)==false): return;
+	if (is_instance_valid(mCamera)==false || mCamera.is_inside_tree() == false): return;
 	if (mbMotionBlurActive==false): return;
 	
 	#########################
