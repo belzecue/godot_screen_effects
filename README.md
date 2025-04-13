@@ -252,13 +252,13 @@ Sets the camera used for rendering effects.
 **Parameters**:  
 - `aCamera`: The `Camera3D` node to use.  
 
-### Roadmap
+## Roadmap
 
 More effect types will be added in future updates.
 
-### Example Project
+## Example Project
 
 An example project demonstrating the usage of this addon is included in the repository. Check the example_project/ folder for a working setup that shows how to integrate and manage the effects in your own project.
 
-### License
+## License
 This addon is licensed under the MIT License. See the LICENSE file for more information.
