@@ -23,7 +23,7 @@ var mvScreenBlurInst: Array[cScreenBlur];
 var mlScreenBlurID: int = -1;
 var mvScreenFadeInst: Array[cScreenFade];
 var mlScreenFadeID: int = -1;
-var mbMotionBlurActive: bool = true;
+var mbMotionBlurActive: bool = false;
 var mfLinearMotionBlurAmount: float = 0.05;
 var mfAngularMotionBlurAmount: float = 0.1;
 var mfMotionBlurFadeSpeed: float = 24.0;
