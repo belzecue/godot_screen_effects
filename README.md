@@ -74,7 +74,6 @@ if mlRadialBlurInstanceID != -1:
 ```
 
 ## API Reference
-
 The `EffectsHandler` class provides an interface for managing screen effects in Godot 4.x 3D projects. Below are the public methods for adding, configuring, and stopping effects like FOV fades, screen shakes, blurs, and color fades, as well as accessing viewport-related nodes.
 
 ### Methods
@@ -253,11 +252,9 @@ Sets the camera used for rendering effects.
 - `aCamera`: The `Camera3D` node to use.  
 
 ## Roadmap
-
-More effect types will be added in future updates.
+No future updates planned currently. 
 
 ## Example Project
-
 An example project demonstrating the usage of this addon is included in the repository. Check the example_project/ folder for a working setup that shows how to integrate and manage the effects in your own project.
 
 ## License
